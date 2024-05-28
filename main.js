@@ -5,13 +5,13 @@ function pageload() {
     var img2 = document.getElementById("hw2");
     var img3 = document.getElementById("hw3");
 
-    img1.onclick = linkhw1;
+    img1.onclick = linkhw1;// Assign click event handlers to the elements
     img2.onclick = linkhw2;
     img3.onclick = linkhw3;
 }
 
 function linkhw1() {
-    location.href = "WK1hw1.html";
+    location.href = "WK1hw1.html";//navigate
 }
 
 function linkhw2() {
@@ -21,3 +21,4 @@ function linkhw2() {
 function linkhw3() {
     location.href = "part4/part4.html";
 }
+
