@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #e9e9e9;
-    font-size: large;
+    font-size: large; /* General styles */
   }
   
   header,
@@ -15,15 +15,16 @@ body {
   
   header {
     background: url('cool-background.png') no-repeat center center fixed;
+    /* centered both horizontally and vertically, and fixed in the viewport */
     background-size: cover;
     color: white;
     text-align: center;
     width: 100%;
     margin: 0;
     padding: 20px 0;
-  }
+  }/* Header styles with a background image, text color, and alignment */
   
-  h1 {
+  h1 { /* Style for the main title (h1) */
     text-align: center;
     font-family: serif;
     font-weight: normal;
@@ -31,55 +32,55 @@ body {
     margin: 0;
   }
   
-  h2 {
+  h2 { 
     color: #439D9D;
     font-family: Georgia, serif;
     font-size: 2em;
     text-align: left;
   }
   
-  nav {
+  nav { /* Navigation bar styles with a background image and padding */
     background: url('BG.png') no-repeat center center fixed;
     background-size: cover;
     padding: 20px;
     font-family: Georgia, serif;
   }
   
-  nav ul {
+  nav ul {  /* Unordered list styles in the navigation bar */
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
   }
   
-  nav ul li {
-    display: inline;
+  nav ul li {  
+    display: inline; /* List item styles in the navigation bar */
     margin-right: 20px;
   }
   
   nav ul li a {
-    text-decoration: none;
+    text-decoration: none;  /* Link styles in the navigation bar */
     color: #333;
     font-family: Georgia, serif;
   }
   
   nav ul li a:hover {
-    color: #666;
+    color: #666;   /* Hover effect for links in the navigation bar */
   }
   
   main section {
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Margin at the bottom of each main section */
   }
   
   .image-container {
-    display: flex;
+    display: flex;  /* Flexbox container for images */
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
   }
   
   .image-container a {
-    display: block;
+    display: block;  /* Block display for anchor elements within image containers */
     width: 100%;
     max-width: 300px;
   }
@@ -87,17 +88,17 @@ body {
   .image-container img {
     width: 100%;
     height: 300px;
-    object-fit: cover;
+    object-fit: cover; 
   }
   
   .work-image-container {
-    text-align: center;
+    text-align: center; /* Block display for work image container */
   }
   
   .work-image-container a {
     display: inline-block;
   }
-  
+  /* Media query for screens with a max width of 600px */
   @media (max-width: 600px) {
     .image-container {
       gap: 10px;
@@ -158,6 +159,7 @@ body {
       height: auto;
     }
   }
+  /* styles for the work image container images */
   .work-image-container img {
     width: 80%;
     height: fit-content;
