@@ -1,153 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <style>
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header, nav, main, footer {
-      padding: 20px;
-    }
-
-    header {
-      background: url('cool-background.png') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      text-align: center;
-    }
-    h2 {
-      font-family: Georgia, serif;
-      font-size: 24px;
-    }
-    nav {
-      background: url('BG.png') no-repeat center center fixed;
-      background-size: cover;
-      padding: 20px;
-      font-family: Georgia, serif; 
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      display: inline;
-      margin-right: 20px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-      font-family: Georgia, serif; 
-    }
-
-    nav ul li a:hover {
-      color: #666;
-      font-family: Georgia, serif; 
-    }
-
-    main section {
-      margin-bottom: 40px;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      padding: 10px 0;
-    }
-
-    .image-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .image-container a {
-      display: block;
-      width: 100%;
-      max-width: 300px; 
-    }
-
-    .image-container img {
-      width: 100%;
-      height: 300px; 
-      object-fit: cover; 
-    }
-
-    @media (min-width: 600px) {
-      .image-container a {
-        flex: 1 1 calc(50% - 20px); 
-      }
-    }
-
-    @media (min-width: 900px) {
-      .image-container a {
-        flex: 1 1 calc(50% - 20px); 
-      }
-    }
-  </style>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
   <header>
     <h1>PORTFOLIO</h1>
   </header>
-  
+
   <nav>
     <ul>
       <li><a href="#about">About Me</a></li>
       <li><a href="#photos">My Photos</a></li>
       <li><a href="#works">Previous Works</a></li>
       <li><a href="#showcase">Class Assignments</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>I'm Chen Yuhao, from Zhejiang Province, China. Now I am a 1st year student in Computer science major in Shibaura Institute of Technology.</p>
+      <p>I'm Chen Yuhao, from Zhejiang Province, China. Now I am a 1st year student in Computer science major in
+        Shibaura Institute of Technology.</p>
     </section>
 
     <section id="photos">
       <h2>My Photos</h2>
-      <img src="placeholder.jpg" alt="1">
-      <!-- Add your own photos with proper alt text -->
+      <div class="image-container">
+        <img src="photo.jpg" alt="Me and my friend">
+        <img src="kamakura.jpg" alt="kamakura">
+        <img src="shibuya sky.jpg" alt="shibuya sky">
+      </div>
     </section>
 
     <section id="works">
       <h2>Previous Works</h2>
-      <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
-        <!-- Add your previous works here -->
-      </ul>
+      <div class="work-image-container">
+        <img  src="Car.png" alt="Project">
+      </div>
     </section>
 
     <section id="showcase">
       <h2>Class Assignments Showcase</h2>
       <div class="image-container">
-        <a href="WK1hw1.html"><img src="blackgoose.png" alt="blackgoose"></a>
-        <a href="WK3hw1.html"><img src="summermenu.png" alt="summermenu"></a>
-        <a href="part4\index.html"><img src="bread.png" alt="bread"></a>
+        <a id="hw1" href="WK1hw1.html"><img src="blackgoose.png" alt="blackgoose"></a>
+        <a id="hw2" href="WK3hw1.html"><img src="summermenu.png" alt="summermenu"></a>
+        <a id="hw3" href="part4/part4.html"><img src="bread.png" alt="bread"></a>
       </div>
-      
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: am23102@Shibaura-it.ac.jp</p>
     </section>
   </main>
-
-  
 </body>
+
 </html>
