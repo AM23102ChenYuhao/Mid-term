@@ -162,7 +162,7 @@ body {
   /* styles for the work image container images */
   .work-image-container img {
     width: 80%;
-    height: fit-content;
+    height: auto;
     max-width: 100%;
     object-fit: auto;
   }
